@@ -400,7 +400,7 @@
                             style="width: unset"
                             onerror="this.src='/assets/img/default_profile.png';"
                         />
-                        <div class="mat-h3 mb-0 warn-color" style="display: inline" *ngIf="this.modCase.content?.lockedBy">
+                        <div class="mat-h3 mb-0 warn-color" style="display: inline" *ngIf="this.modCase.content?.modCase?.lockedAt">
                             {{ 'ModCaseView.CommentsLocked' | translate:lockedCommentsParams }}
                             <app-date-display [date]="this.modCase.content?.modCase?.lockedAt"></app-date-display>
                         </div>
